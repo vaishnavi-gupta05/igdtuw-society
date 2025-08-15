@@ -1,0 +1,101 @@
+/* Reset and page background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:#5b3f88
+}
+
+/* Main container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Top logo */
+.top-logo {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.top-logo img {
+    width: 60px;
+    border-radius: 30px;
+}
+
+/* Page title */
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Card design */
+.card {
+    background-color: #E8C3A0;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #8B5A2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Background image section */
+.card-top {
+    width: 100%;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Circular logo */
+.circle-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+}
+
+/* Card text section */
+.card-bottom {
+    text-align: center;
+    padding: 50px 15px 20px 15px;
+}
+
+.card-bottom h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #5B3623;
+}
+.card-bottom h2 span {
+    font-weight: normal;
+}
+
+.card-bottom p {
+    font-size: 14px;
+    margin: 8px 0 4px 0;
+    color: #5B3623;
+}
+
+/* Instagram icon */
+.insta-icon {
+    width: 20px;
+}

@@ -1,0 +1,97 @@
+<!-- ===============================
+     Finance & Sponsorship Page
+     Replace text & background image as needed
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Sponsorship</title>
+    <link rel="stylesheet" href="styles/domain-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Page-specific background image -->
+    <style>
+        .page-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/Finance\ and\ sponsarship.jpg') center/cover no-repeat; /* Replace with your image */
+            opacity: 0.27;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+    <!-- Main container -->
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="page-header">
+            <h1>Finance & Sponsorship</h1>
+        </header>
+
+        <!-- Content -->
+        <section class="content-box">
+            <h2>Finance & Sponsorship</h2>
+            <p>Finance & Sponsorship involves managing an organization’s or event’s financial resources, including budgeting, fundraising, and securing sponsorships or partnerships to ensure smooth execution and growth.</p>
+
+            <h3>Professional Growth Benefits:</h3>
+            <ul>
+                <li>Strengthens skills in budgeting, financial planning, and reporting</li>
+                <li>Enhances ability to identify and approach potential sponsors or donors</li>
+                <li>Develops negotiation, contract management, and relationship-building expertise</li>
+                <li>Builds strategic thinking related to funding allocation and resource optimization</li>
+                <li>Improves understanding of legal and ethical aspects of sponsorship deals</li>
+            </ul>
+
+            <h3>Personal Growth Benefits:</h3>
+            <ul>
+                <li>Boosts confidence in persuasive communication and networking</li>
+                <li>Encourages accountability and ethical financial practices</li>
+                <li>Enhances problem-solving and decision-making under financial constraints</li>
+                <li>Fosters resilience and adaptability in dynamic funding environments</li>
+            </ul>
+
+            <h3>Popular Tools:</h3>
+            <ul>
+                <li>Finance & Budgeting: Microsoft Excel, QuickBooks, Zoho Books, Google Sheets</li>
+                <li>Fundraising & Sponsorship Management: SponsorPark, GiveWP, Eventbrite Sponsorship</li>
+                <li>Communication & CRM: Mailchimp, HubSpot, Salesforce</li>
+                <li>Project Management: Trello, Asana, Monday.com</li>
+            </ul>
+        </section>
+
+        
+    </div>
+    <div id="footer"></div>
+    <script>
+   // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

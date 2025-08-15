@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain of Societies</title>
+    <link rel="stylesheet" href="styles/see-all-domain.css">
+</head>
+<body>
+
+     <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<section class="domains-section">
+    <h1>Domain Of Societies</h1>
+
+    <div class="domains-grid">
+        <a href="CM_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Content & Media:</h2>
+                <p>Creating articles, videos, posts, and designs for promotion.</p>
+            </div>
+            <img src="image/content-media.jpg" alt="Content & Media">
+        </a>
+
+        <a href="RS_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Research & Strategy:</h2>
+                <p>Studying trends, feedback, and improving performance.</p>
+            </div>
+            <img src="image/research-strategy.jpg" alt="Research & Strategy">
+        </a>
+
+        <a href="pr_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Public Relations:</h2>
+                <p>Build the society's image and connect with people inside and outside campus.</p>
+            </div>
+            <img src="image/PR.jpg" alt="Public Relations">
+        </a>
+
+        <a href="event_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Event Manage:</h2>
+                <p>Planning, organizing, and executing events smoothly.</p>
+            </div>
+            <img src="image/Event management.jpg" alt="Event Manage">
+        </a>
+
+        <a href="Tech_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Tech Work:</h2>
+                <p>Building and maintaining websites, apps, or tech tools.</p>
+            </div>
+            <img src="image/Tech.jpg" alt="Tech Work">
+        </a>
+
+        <a href="FS_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Finance & Sponsorship:</h2>
+                <p>Handling budgets and bringing in funding or sponsors.</p>
+            </div>
+            <img src="image/Finance and sponsarship.jpg" alt="Finance & Sponsorship">
+        </a>
+
+        <a href="CA_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Creative Arts & Design:</h2>
+                <p>Designing posters, stage setups, and creative visuals.</p>
+            </div>
+            <img src="image/art-design.jpg" alt="Creative Arts & Design">
+        </a>
+
+        <a href="TW_domain.html" class="domain-card">
+            <div class="text">
+                <h2>Training & Workshops:</h2>
+                <p>Conducting learning sessions and skill-building programs.</p>
+            </div>
+            <img src="image/Training workshop.jpg" alt="Training & Workshops">
+        </a>
+    </div>
+</section>
+
+<div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+
+
+</body>
+</html>

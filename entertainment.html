@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entertainment Societies</title>
+        <link rel="stylesheet" href="styles/society-pages.css">
+        <style>
+            body {
+        background-color: #8B5A2B; /* Main brown background */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+        </style>
+    </head>
+
+    <body>
+         <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+        <div class="container">
+
+            <!-- Page Heading -->
+            <h1 class="title">Entertainment Societies</h1>
+
+            <!-- Grid Container -->
+            <div class="grid">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-top" style="background-image: url('image/tarannum-BG.jpg');">
+                        <img src="image/tarannum-IG.jpg" alt="Tarannum Logo" class="circle-logo">
+                    </div>
+                    <div class="card-bottom">
+                        <h2>TARANNUM-<br><span>A Music Society</span></h2>
+                        <p>For more information:</p>
+                        <a href="https://www.instagram.com/tarannum.igdtuw?igsh=MXE0YjM3dHJpMjg3eA==" target="_blank">
+                            <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-top" style="background-image: url('image/zena-BG.jpg');">
+                        <img src="image/zena-IG.jpg" alt="Zena Logo" class="circle-logo">
+                    </div>
+                    <div class="card-bottom">
+                        <h2>ZENA-<br><span>The Fashion Society</span></h2>
+                        <p>For more information:</p>
+                        <a href="https://www.instagram.com/zena.igdtuw?igsh=NHo2OW11ZGo4cHAx" target="_blank">
+                            <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-top" style="background-image: url('image/hypnotics-BG.jpg');">
+                        <img src="image/hypnotics-IG.jpg" alt="Hypnotics Logo" class="circle-logo">
+                    </div>
+                    <div class="card-bottom">
+                        <h2>HYPNOTICS-<br><span>The Dance Society</span></h2>
+                        <p>For more information:</p>
+                        <a href="https://www.instagram.com/hypnotics_igdtuw?igsh=NnFhejBrNjUzdHZ2" target="_blank">
+                            <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-top" style="background-image: url('image/rehnuma-BG.jpg');">
+                        <img src="image/rehnuma-IG.jpg" alt="Rehnuma Logo" class="circle-logo">
+                    </div>
+                    <div class="card-bottom">
+                        <h2>REHNUMA-<br><span>The Dramatics Society</span></h2>
+                        <p>For more information:</p>
+                        <a href="https://www.instagram.com/rahnuma_igdtuw?igsh=MWNpZ2loM3d1Nmhodg==" target="_blank">
+                            <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-top" style="background-image: url('image/optica-BG.webp');">
+                        <img src="image/optica-IG.jpg" alt="Optica Logo" class="circle-logo">
+                    </div>
+                    <div class="card-bottom">
+                        <h2>OPTICA-<br><span>Band Society</span></h2>
+                        <p>For more information:</p>
+                        <a href="https://www.instagram.com/optica_igdtuw?igsh=OXQwajM2bGJ0eWhp" target="_blank">
+                            <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script>
+        // Load Navbar
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+                // Load the navbar JavaScript AFTER navbar HTML is added
+                let script = document.createElement("script");
+                script.src = "navbar.js";
+                document.body.appendChild(script);
+            });
+
+
+            // Load Footer
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        </script>
+
+    
+
+
+    </body>
+</html>

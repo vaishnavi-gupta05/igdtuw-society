@@ -1,0 +1,69 @@
+/* ===============================
+   css for Domain
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Background image with 27% opacity */
+.page-wrapper {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    padding: 20px;
+    color: #392c19ff;
+}
+
+.logo {
+    width: 60px; /* Adjust */
+    margin-bottom: 10px;
+}
+
+/* Content Box */
+.content-box {
+    background: #4a2c1a;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.content-box h2 {
+    color: #f4d2a0;
+}
+
+.content-box h3 {
+    margin-top: 20px;
+    color: #f4d2a0;
+}
+
+.content-box ul {
+    margin-left: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-box {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+}
+/* ===============================
+  End css for Domain
+================================ *

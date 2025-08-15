@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5e1d0;
+}
+
+.domains-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.domains-section h1 {
+    color: #5b3f2a;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: #b3754a;
+}
+
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.domain-card {
+    background: linear-gradient(to right, #f8ebe0, #e9c9af);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.domain-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.domain-card .text {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.domain-card h2 {
+    font-size: 18px;
+    color: #5b3f2a;
+    margin: 0 0 8px 0;
+}
+
+.domain-card p {
+    font-size: 14px;
+    color: #5b3f2a;
+    margin: 0;
+}
+
+.domain-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}

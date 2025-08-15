@@ -1,0 +1,99 @@
+<!-- ===============================
+     Creative Arts & Design Page
+     Replace text & background image as needed
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Arts & Design</title>
+    <link rel="stylesheet" href="styles/domain-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Page-specific background image -->
+    <style>
+        .page-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/art-design.jpg') center/cover no-repeat; /* Replace with your image */
+            opacity: 0.27;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+    <!-- Main container -->
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="page-header">
+            
+            <h1>Creative Arts & Design</h1>
+        </header>
+
+        <!-- Content -->
+        <section class="content-box">
+            <h2>Creative Arts & Design</h2>
+            <p>Creative Arts & Design involves using imagination and artistic skills to create visual, digital, or physical works such as graphics, illustrations, animations, and layouts that communicate ideas and inspire audiences.</p>
+
+            <h3>Professional Growth Benefits:</h3>
+            <ul>
+                <li>Enhances creativity and innovation</li>
+                <li>Builds proficiency in design software and techniques</li>
+                <li>Develops visual storytelling and branding skills</li>
+                <li>Improves attention to detail and aesthetic judgment</li>
+                <li>Opens career paths in graphic design, animation, UI/UX, and more</li>
+            </ul>
+
+            <h3>Personal Growth Benefits:</h3>
+            <ul>
+                <li>Boosts self-expression and confidence</li>
+                <li>Encourages experimentation and open-mindedness</li>
+                <li>Develops patience and perseverance through iterative work</li>
+                <li>Enhances problem-solving with creative solutions</li>
+            </ul>
+
+            <h3>Popular Tools:</h3>
+            <ul>
+                <li>Design & Illustration: Adobe Photoshop, Illustrator, CorelDRAW</li>
+                <li>Digital Art & Animation: Procreate, Adobe After Effects, Blender</li>
+                <li>UI/UX Design: Figma, Sketch, Adobe XD</li>
+                <li>Collaboration: Miro, InVision, Slack</li>
+            </ul>
+        </section>
+
+       
+    </div>
+    <div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

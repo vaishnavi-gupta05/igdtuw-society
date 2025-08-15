@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+  /* ===== General Styles ===== */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f6e8df;
+    color: #4a2b1c;
+  }
+  h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  /* ===== Contact Us Header ===== */
+  .contact-header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    border-bottom: 2px solid #4a2b1c;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .contact-header span {
+    color: #d68b57;
+  }
+
+  /* ===== Team Section ===== */
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  .team-card {
+    background: linear-gradient(180deg, #e2b9a2, #c89a85);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .team-card:hover {
+    transform: translateY(-8px);
+  }
+  /* Border shine effect */
+  .team-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.4), transparent, transparent);
+    transform: rotate(25deg);
+    transition: all 0.5s ease;
+  }
+  .team-card:hover::before {
+    left: 100%;
+    top: 100%;
+  }
+  .team-img {
+    width: 120px;
+    height: 120px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  .team-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .team-role {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .linkedin-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  /* ===== Responsive ===== */
+  @media(max-width: 768px) {
+    .team-container {
+      gap: 20px;
+    }
+    .team-card {
+      width: 200px;
+    }
+  }
+  @media(max-width: 500px) {
+    .team-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>
+</head>
+<body>
+   <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<!-- ===== Header ===== -->
+<div style="text-align:center;">
+  <div class="contact-header">Contact <span>us</span></div>
+</div>
+
+<!-- ===== Team Section ===== -->
+<h2>Meet Our Team</h2>
+<div class="team-container">
+  <!-- Card 1 -->
+  <div class="team-card">
+    <div class="team-img">
+      <!-- Replace with member image -->
+      <img src="image/pragya-tripathi-linkedin.jpg" alt="Member 1" style="border-radius:50%; width:100%; height:100%; object-fit: cover;">
+    </div>
+    <div class="team-name">Pragya Tripathi</div>
+    <div class="team-role">ECE 2nd Year IGDTUW</div>
+    <a href="https://www.linkedin.com/in/pragya-tripathi-573198329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="linkedin-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="team-card">
+    <div class="team-img">
+      <!-- Replace with member image -->
+      <img src="image/vaishnavi-gupta-linkedin.jpg" alt="Member 2" style="border-radius:50%; width:100%; height:100%; object-fit: cover;">
+    </div>
+    <div class="team-name">Vaishnavi Gupta</div>
+    <div class="team-role">ECE 2nd Year IGDTUW</div>
+    <a href="http://www.linkedin.com/in/vaishnavi-gupta-737065329" target="_blank"><img class="linkedin-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="team-card">
+    <div class="team-img">
+      <!-- Replace with member image -->
+      <img src="image/sakshi-linkedin.jpg" alt="Member 3" style="border-radius:50%; width:100%; height:100%; object-fit: cover;">
+    </div>
+    <div class="team-name">Sakshi</div>
+    <div class="team-role">ECE 2nd Year IGDTUW</div>
+    <a href="https://www.linkedin.com/in/sakshi-534b53324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img class="linkedin-icon" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+  </div>
+</div>
+
+ <div id="footer"></div>
+
+<!-- ===== JavaScript ===== -->
+<script>
+  // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+  // Simple email submit simulation
+  document.querySelector('.submit-btn').addEventListener('click', function() {
+    const email = document.querySelector('.email-input').value;
+    if(email.trim() !== "") {
+      alert("Thank you for subscribing, " + email + "!");
+    } else {
+      alert("Please enter a valid email.");
+    }
+  });
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- ===============================
+     Tech Work Page
+     Replace text & images as needed
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical</title>
+    <link rel="stylesheet" href="styles/domain-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Example font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+.page-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image/Tech.jpg') center/cover no-repeat; /* Replace per page */
+    opacity: 0.27;
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+       <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+    <!-- Main container -->
+    <div class="page-wrapper">
+
+        <!-- Background image with opacity will be added in CSS -->
+
+        <!-- Title -->
+        <header class="page-header">
+            <h1>Technical works</h1>
+        </header>
+
+        <!-- Content Box -->
+        <section class="content-box">
+            <h2>Technical works</h2>
+            <p>Technical works include tasks like website development, coding, software maintenance, and troubleshooting, using technical skills to build and manage digital products and systems.</p>
+
+            <h3>Professional Growth Benefits:</h3>
+            <ul>
+                <li>Improves coding and problem-solving skills</li>
+                <li>Builds expertise in web technologies and tools</li>
+                <li>Enhances attention to detail and debugging abilities</li>
+                <li>Opens opportunities in development, testing, and IT support</li>
+            </ul>
+
+            <h3>Personal Growth Benefits:</h3>
+            <ul>
+                <li>Boosts logical thinking and creativity</li>
+                <li>Develops patience and focus</li>
+                <li>Encourages continuous learning and adaptability</li>
+            </ul>
+
+            <h3>Popular Tools:</h3>
+            <ul>
+                <li>Coding & Development: VS Code, GitHub, Chrome DevTools</li>
+                <li>Web Technologies: HTML, CSS, JavaScript, React</li>
+                <li>Collaboration: Slack, Trello, Jira</li>
+            </ul>
+        </section>
+
+        
+    </div>
+    <div id="footer"></div>
+    <script>
+  // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

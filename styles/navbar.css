@@ -1,0 +1,108 @@
+/* ====== GENERAL STYLES ====== */
+body {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ====== NAVBAR CONTAINER ====== */
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | links | extra */
+  align-items: center;
+  background-color: #f6e6dc;
+  padding: 0.5rem 2rem;
+  border-bottom: 2px solid #2d1b10;
+}
+
+/* ====== LOGO SECTION ====== */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    margin-right: 8px;
+    border-radius: 25px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4d2e1f;
+}
+
+.logo-text .highlight {
+    color: #e27d60;
+}
+
+/* ====== NAV LINKS ====== */
+.nav-links {
+    list-style: none;    
+    gap: 35px;
+    margin: 0;
+    display: none; /* hidden by default */
+    flex-direction: column;
+    justify-self: center;    
+    background-color: #f5e4da;
+    position: absolute;
+    top: 50px;
+    right: 0;   
+    width: 150px;
+    padding: 10px 0 10px 10px;
+    z-index: 1000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4d2e1f;
+}
+
+.nav-links a.active {
+    color: #e27d60;
+}
+
+/* Show menu when active */
+.nav-links.active {
+  display: flex;
+}
+
+.nav-extra {
+  display: flex;
+  align-items: center;
+}
+
+/* ====== HAMBURGER ICON ====== */
+.hamburger {
+  justify-self: right;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* hide by default */
+}
+
+/* ====== MOBILE VIEW ====== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .hamburger {
+        display: block; /* show only on mobile */
+    }
+}
+
+/* ====== DESKTOP VIEW ====== */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social impact Societies</title>
+    <link rel="stylesheet" href="styles/society-pages.css">
+    <style>
+                /* Reset and page background */
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #bb6f29;
+          color: white;
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+       <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<div class="container">
+
+    
+
+    <!-- Page Heading -->
+    <h1 class="title">Other societies</h1>
+
+    <!-- Grid Container -->
+    <div class="grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/finevest-BG.jpg');">
+                <img src="image/finvesta-IG.jpg" alt="Finivesta Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2> Finivesta:<br><span>The Finance and Economic society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/finivesta_igdtuw?igsh=dms3aXVobGczcGln" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        
+        <!-- Card 2-->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/minvera-BG.webp');">
+                <img src="image/minvera-IG.jpg" alt="Minerva Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>Minerva:<br><span>A society under the Training and Placement Cell</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/minerva.igdtuw?utm_source=ig_web_button_share_sheet&igsh=eXlpMWswZXZ0bzI1" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+        
+
+        <!-- Card 3-->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/insist-BG.jpg');">
+                <img src="image/Insist-IG.jpg" alt="insist Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>INSTINCT:<br><span>LIFE SKILL SOCIETY</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/instinct_igdtuw?igsh=MTlnZDd3dHN3OXQx" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+        
+        <!-- Card 4-->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/E-cell-BG.jpg');">
+                <img src="image/e-cell-IG.jpg" alt="E-cell logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>E-CELL :<br><span>The Official Entrepreneurship and Development Cell of IGDTUW</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/ecell_igdtuw?igsh=MWh2dGwzMG5vczlmbA==" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+<div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

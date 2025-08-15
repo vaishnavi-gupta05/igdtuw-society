@@ -1,0 +1,216 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & Font Setup */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f1e4db; /* light beige background */
+  color: #3b2e2e; /* default dark brown text */
+  
+}
+
+/* Main Section */
+.societies-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title with Highlight */
+.section-title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.section-title .highlight {
+  color: #b55d52; /* reddish brown */
+}
+
+/* Cards Container Grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px 40px;
+  margin-bottom: 50px;
+}
+
+/* Card Base Style */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 20px 30px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card Headings */
+.card h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Text */
+.card p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #3b2e2e;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Quote Text Style */
+.quote {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.85rem;
+  color: #b86ca3; /* default pinkish, overridden below */
+  margin: 12px 0 18px 0;
+}
+/*button conatiner*/
+.btn-container{
+  padding-top: 12px;
+  height: 50px;
+  background-color: #f1e4db;
+  margin: 0;
+}
+
+/* Button Style */
+.btn-view {
+  background: transparent;
+  border: none;
+  color: #3b2e2e;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  align-self:flex-start;
+  padding-bottom:14px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-left: 120px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Arrow styling */
+.btn-view::after {
+  content: "→";
+  margin-left: 6px;
+}
+
+/* Button Hover */
+.btn-view:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Others Button Container */
+.others-btn-container {
+  text-align: center;
+}
+
+.btn-others {
+  background: transparent;
+  border: 1.5px solid #3b2e2e;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #3b2e2e;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-others:hover {
+  background-color: #3b2e2e;
+  color: white;
+}
+
+/* Colors & Quote Overrides for Each Card */
+
+/* Entertainment (Brown) */
+.entertainment h2 {
+  color: #ad7a5c;
+}
+
+.entertainment .quote {
+  color: #a55f91;
+}
+
+.entertainment .btn-view {
+  color: #ad7a5c;
+}
+
+/* Technological (Blue) */
+.technological h2 {
+  color: #3c3c8e;
+}
+
+.technological .quote {
+  color: #b05fb0;
+}
+
+.technological .btn-view {
+  color: #3c3c8e;
+}
+
+/* Literature (Pink) */
+.literature h2 {
+  color: #e2769a;
+}
+
+.literature .quote {
+  color: #b86ca3;
+}
+
+.literature .btn-view {
+  color: #e2769a;
+}
+
+/* Sports (Green) */
+.sports h2 {
+  color: #3f7b43;
+}
+
+.sports .quote {
+  color: #b86ca3;
+}
+
+.sports .btn-view {
+  color: #3f7b43;
+}
+
+/* Visual Arts (Yellow/Gold) */
+.visual-arts h2 {
+  color: #cfa23b;
+}
+
+.visual-arts .quote {
+  color: #b86ca3;
+}
+
+.visual-arts .btn-view {
+  color: #cfa23b;
+}
+
+/* Social Leaders Hub (Red) */
+.social-leaders h2 {
+  color: #c45d5a;
+}
+
+.social-leaders .quote {
+  color: #b86ca3;
+}
+
+.social-leaders .btn-view {
+  color: #c45d5a;
+}

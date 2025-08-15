@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Societies</title>
+    <link rel="stylesheet" href="styles/society-pages.css">
+    <style>
+        /* Reset and page background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:#5bb996
+}
+    </style>
+</head>
+<body>
+       <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="title"> Sports Societies</h1>
+
+    <!-- Grid Container -->
+    <div class="grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/senergy-BG.jpg');">
+                <img src="image/senergy-IG.jpg" alt=" Synergy Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2> Synergy:<br><span>The sports club</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/synergy_igdtuw?igsh=MTF2aDFjMzE2Zjhpcg==" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        
+        <!-- Card 2-->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/avira-BG.jpg');">
+                <img src="image/avira-IG.jpg" alt="AVIRA  Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>AVIRA :<br><span>Martial arts and parkour societies</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/avira.igdtuw?igsh=MXpic3U5djB0MTlm" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* Footer Base */
+.footer {
+  margin-bottom: 0;
+  margin-top: 50px;
+  background-color: #4d2e1f; /* Brown background from image */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+/* Logo Styling */
+.footer-logo {
+  display: flex;
+  align-items: baseline; /* Align with text baseline */
+}
+
+.logo-text-footer {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.logo-o {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px; /* Match text height */
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 4px; /* Space between S and O */
+  position: relative;
+  top: 2px; /* Fine-tune vertical alignment */
+}
+
+.logo-o img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Section Titles */
+.footer-title {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/* Managed By Section */
+.footer-managed p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-managed img {
+  width: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Contact */
+.contact {
+  margin-top: 15px;
+}
+.contact p {
+  font-size: 13px;
+}
+
+/* Subscribe Section */
+.footer-subscribe form {
+  display: flex;
+}
+.footer-subscribe input {
+  padding: 5px;
+  border: 1px solid black;
+  outline: none;
+  font-size: 12px;
+}
+.footer-subscribe button {
+  padding: 5px 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Bottom Section */
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 15px 0;
+}
+.footer-bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+.footer-links a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

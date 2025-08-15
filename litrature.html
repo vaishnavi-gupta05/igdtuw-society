@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>literature Societies</title>
+    <link rel="stylesheet" href="styles/society-pages.css">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:#b95ba0
+}
+    </style>
+</head>
+<body>
+       <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<div class="container">
+
+
+    <!-- Page Heading -->
+    <h1 class="title">Literature Societies</h1>
+
+    <!-- Grid Container -->
+    <div class="grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/MUN-BG.jpg');">
+                <img src="image/mun-IG.jpg" alt="MUN Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>MUN:<br><span> Model united nations society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/igdtuwmun_?igsh=MWdwazRjdTk0MXhyZw==" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/bhav-BG.jpg');">
+                <img src="image/bhav-IG.jpg" alt="BHAV Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>BHAV:<br><span> The Role Play Society IGDTUW</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/bhav_igdtuw?igsh=MW50NXlkOXl6OTJnZA==" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/SOCH-BG.jpg');">
+                <img src="image/SOCH-IG.jpg" alt="SOCH Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>Soch:<br><span>Art and writing Society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/soch.igdtuw?igsh=dzJmb2MzdHplMGN3" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/technoliteraty-BG.jpg');">
+                <img src="image/TECHNOLITERATY-IG.jpg" alt="technoliteraty Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>TECHNOLITERATI :<br><span>Literary Society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/technoliterati.igdtuw?igsh=dHdoaHRlaXAwOTYw" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+<div id="footer"></div>
+    <script>
+  // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

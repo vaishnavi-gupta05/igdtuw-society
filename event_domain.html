@@ -1,0 +1,95 @@
+<!-- ===============================
+     Event Management Page
+     Replace text & background image as needed
+=================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles/domain-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Page-specific background image -->
+    <style>
+        .page-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/Event\ management.jpg') center/cover no-repeat; /* Replace with your image */
+            opacity: 0.27;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+    <!-- Main container -->
+    <div class="page-wrapper">
+
+        <!-- Header -->
+        <header class="page-header">
+            <h1>Event Management</h1>
+        </header>
+
+        <!-- Content -->
+        <section class="content-box">
+            <h2>Event Management</h2>
+            <p>Event Management is the process of planning, organizing, coordinating, and executing events such as conferences, workshops, product launches, or social gatherings to achieve specific objectives.</p>
+
+            <h3>Professional Growth Benefits:</h3>
+            <ul>
+                <li>Develops strong organizational and multitasking skills</li>
+                <li>Enhances budgeting, negotiation, and vendor management abilities</li>
+                <li>Builds leadership and teamwork experience</li>
+                <li>Improves problem-solving, crisis management, and time management skills</li>
+            </ul>
+
+            <h3>Personal Growth Benefits:</h3>
+            <ul>
+                <li>Boosts confidence in handling people and dynamic situations</li>
+                <li>Encourages creativity in designing engaging experiences</li>
+                <li>Strengthens communication, networking, and interpersonal skills</li>
+                <li>Fosters adaptability and quick decision-making under pressure</li>
+            </ul>
+
+            <h3>Popular Tools:</h3>
+            <ul>
+                <li>Planning & Coordination: Eventbrite, Trello, Asana</li>
+                <li>Communication: Slack, Zoom, Microsoft Teams</li>
+                <li>Budgeting & Registrations: Google Sheets, Cvent, SurveyMonkey</li>
+            </ul>
+        </section>
+
+        
+    </div>
+    <div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

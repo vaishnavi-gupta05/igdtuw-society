@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art, Media & Photography societies</title>
+    <link rel="stylesheet" href="styles/society-pages.css">
+<style>
+    /* Reset and page background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:#b9ac5b
+}
+</style>
+</head>
+<body>
+     <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+<div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="title">Art, Media & Photography societies</h1>
+
+    <!-- Grid Container -->
+    <div class="grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/Preksha-BG.jpg');">
+                <img src="image/Preksha-IG.jpg" alt=" Prekshya Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2> Prekshya – <br><span>The photography society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/prekshya_igdtuw?igsh=MTRvMnF2cGZwMHR0Yw==" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+
+        
+        <!-- Card 2-->
+        <div class="card">
+            <div class="card-top" style="background-image: url('image/SOCH-BG.jpg');">
+                <img src="image/SOCH-IG.jpg" alt="SOCH Logo" class="circle-logo">
+            </div>
+            <div class="card-bottom">
+                <h2>Soch:<br><span>Art and writing Society</span></h2>
+                <p>For more information:</p>
+                <a href="https://www.instagram.com/soch.igdtuw?igsh=dzJmb2MzdHplMGN3" target="_blank">
+                    <img src="image/instagram-icon.png" alt="Instagram" class="insta-icon">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div id="footer"></div>
+    <script>
+    // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
