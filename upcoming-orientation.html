@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Orientation</title>
+  <link rel="stylesheet" href="styles/upcoming-orientation.css">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+
+  <h2>Upcoming Orientation</h2>
+
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="poster">
+        <img src="image/greensphere-orientation.jpg" alt="GreenSphere Poster">
+      </div>
+      <div class="card-content">
+        <div class="society">GreenSphere</div>
+        <div class="details">25/09/25, Monday, Seminar Hall</div>
+        <a href="https://chat.whatsapp.com/GwEpaWo4aMhLFSsmGQcctA?mode=ac_t" class="icons">
+          <img src="image/whatsapp-icon.png" alt="Calendar Icon" class="icon">
+        </a>
+        <a href="" class="icons">
+          <img src="image/search-icon.png" alt="Search Icon" class="icon">
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="poster">
+        <img src="image/avira-orientation.jpg" alt="Avira Poster">
+      </div>
+      <div class="card-content">
+        <div class="society">Avira</div>
+        <div class="details">26/09/25, Tuesday, Basketball Court</div>
+        <a href="" class="icons">
+          <img src="image/whatsapp-icon.png" alt="Calendar Icon" class="icon">
+        </a>
+        <a href="" class="icons">
+          <img src="image/search-icon.png" alt="Search Icon" class="icon">
+        </a>
+          
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div id="footer"></div>
+    <script>
+  // Load Navbar
+    fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+            // Load the navbar JavaScript AFTER navbar HTML is added
+            let script = document.createElement("script");
+            script.src = "navbar.js";
+            document.body.appendChild(script);
+        });
+
+    // Load Footer
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
