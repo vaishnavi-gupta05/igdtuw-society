@@ -44,7 +44,7 @@ Hosting & Deployment: Netlify
 
 
 👩‍💻 Team
-Name	                  Role	                             GitHub Link
-Vaishnavi Gupta	       Frontend & Deployment	         [vaishnavi-gupta05](https://github.com/vaishnavi-gupta05)
-Pragya Tripathi	       Styling & Responsiveness	      [pragyaaa305](https://github.com/pragyaaa305)
-Sakshi		            Content & Documentation	         [tech-with-sakshi](https://github.com/tech-with-sakshi)
+
+Vaishnavi Gupta	-       Frontend & Deployment	   -      [vaishnavi-gupta05](https://github.com/vaishnavi-gupta05)  ;
+Pragya Tripathi	  -     Styling & Responsiveness	  -    [pragyaaa305](https://github.com/pragyaaa305)   ;
+Sakshi		   -         Content & Documentation	     -    [tech-with-sakshi](https://github.com/tech-with-sakshi)   .
